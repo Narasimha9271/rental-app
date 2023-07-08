@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Login from "./components/LogIn";
 import Signup from "./components/SignUp";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 import AllCategory from "./components/AllCategory";
 import Cars from "./components/Cars";
 import Bikes from "./components/Bike";
@@ -22,7 +22,7 @@ const App = () => {
     );
 };
 
-const appRouter = createBrowserRouter([
+const appRouter = createHashRouter([
     {
         path: "/",
         element: <App />,
